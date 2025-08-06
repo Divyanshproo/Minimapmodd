@@ -15,21 +15,18 @@ repositories {
 }
 
 dependencies {
-    // Minecraft + Yarn mappings
+    // Minecraft version
     minecraft "com.mojang:minecraft:1.21.4"
-    mappings "net.fabricmc:yarn:1.21.4+build.2:v2"
 
-    // Fabric loader
-    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    // Yarn mappings
+    mappings "net.fabricmc:yarn:1.21.4+build.5:v2"
 
-    // Full Fabric API (client+server) for 1.21.4
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.111.0+1.21.4") {
-        transitive = true
-    }
+    // Loom will remap the Fabric API to match the mappings above
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.111.0+1.21.4"
 }
-
 loom {
     splitEnvironmentSourceSets()
 }
+
 
 
