@@ -7,6 +7,10 @@ group = 'com.example'
 version = '1.0.0'
 
 repositories {
+    maven {
+        name = "Fabric"
+        url = "https://maven.fabricmc.net/"
+    }
     mavenCentral()
 }
 
@@ -21,5 +25,6 @@ loom {
     splitEnvironmentSourceSets()
 
 }
+
 
 
