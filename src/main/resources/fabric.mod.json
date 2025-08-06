@@ -6,7 +6,12 @@
   "description": "A minimap mod for Minecraft",
   "authors": ["Divyansh"],
   "entrypoints": {
-    "client": ["com.example.minimapmod.MinimapMod"]
+    "main": [
+      "com.example.minimapmod.MinimapMod"
+    ],
+    "client": [
+      "com.example.minimapmod.MinimapModClient"
+    ]
   },
   "mixins": [],
   "depends": {
